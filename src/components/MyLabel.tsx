@@ -19,6 +19,11 @@ export interface Props {
    * Colores básicos del botón
    */
   color?: "primary" | "secondary" | "tertiary";
+
+  /**
+   * Colores básicos del texto
+   */
+  fontColor?: string;
 }
 
 export const MyLabel = ({
@@ -26,9 +31,13 @@ export const MyLabel = ({
   size = "normal",
   color = "primary",
   AllCaps = false,
+  fontColor,
 }: Props) => {
   return (
-    <span className={`label ${size} text-${color}`}>
+    <span
+      style={{ color: fontColor }}
+      className={`label ${size} text-${color} `}
+    >
       {AllCaps ? label.toLocaleUpperCase() : label}
     </span>
   );
