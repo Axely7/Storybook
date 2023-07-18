@@ -1,11 +1,28 @@
 {
-  "name": "my-storybook",
-  "private": true,
+  "name": "aj-my-storybook-components",
+  "private": false,
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "homepage": "https://axel-jimenez.com",
+  "repository": {
+    "url": "https://github.com/Axely7/Storybook.git",
+    "type": "git"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "storybook build",
+    "build": "TODO: implementar",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
